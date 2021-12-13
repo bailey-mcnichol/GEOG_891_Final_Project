@@ -1,0 +1,127 @@
+Identification_Information:
+  Citation:
+    Citation_Information:
+      Originator: USDA/NRCS
+      Title: Gridded Soil Survey Geographic (gSSURGO) by State
+  Description:
+    Purpose: The Gridded SSURGO dataset was created for use in national,
+      regional, and state-wide resource planning and analysis of
+      soils data. The raster map layer data can be readily combined
+      with other national, regional, and local raster layer
+  Time_Period_of_Content:
+    Time_Period_Information:
+      Single_Date/Time:
+        Calendar_Date: 09-Dec-2019   FY20
+  Status:
+    Progress: Complete
+  Spatial_Domain:
+    Bounding_Coordinates:
+      West_Bounding_Coordinate: -104.05351
+      East_Bounding_Coordinate: -95.30829
+      North_Bounding_Coordinate: 43.00171
+      South_Bounding_Coordinate: 40
+  Keywords:
+    Theme:
+      Theme_Keyword_Thesaurus: Standard for Geospatial Dataset File Naming
+      Theme_Keyword: Soils
+    Place:
+      Place_Keyword_Thesaurus: GNIS
+      Place_Keyword: Nebraska
+      Place_Keyword: *
+  Use_Constraints:
+
+    The U.S. Department of Agriculture, Service Center Agencies should be acknowledged as the data source in products derived from these data.
+
+    This data set is not designed for use as a primary regulatory tool in permitting or citing decisions, but may be used as a reference source.  This information may be interpreted by organizations, agencies, units of government, or others based on needs; however, they are responsible for the appropriate application.  Federal, State, or local regulatory bodies are not to reassign to the Service Center Agencies any authority for the decisions that they make.  The Service Center Agencies will not perform any evaluations of these data for purposes related solely to State or local regulatory programs.
+
+    Photographic or digital enlargement of these data to scales greater than at which they were originally mapped can cause misinterpretation of the data.  Digital data files are periodically updated, and users are responsible for obtaining the latest version of the data.
+  Point_of_Contact:
+    Contact_Information:
+      Contact_Organization_Primary:
+        Contact_Organization: USDA/NRCS Soil Survey Center hotline@lin.usda.gov
+      Contact_Address:
+        Address: Fed Building, Room 152 100 Centennail Mall North
+        City: Lincoln
+        State_or_Province: Nebraska
+        Postal_Code: 68508-3866
+Data_Quality_Information:
+  Lineage:
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator:
+            USDA/NRCS Soil Survey Center
+          Publication_Date: 2019
+          Title: Gridded Soil Survey Geographic (gSSURGO)
+      Source_Scale_Denominator: 24,000
+    Process_Step:
+      Process_Description: 
+This dataset is a digital soil survey and generally is the most detailed level of soil geographic data 
+developed by the National Cooperative Soil Survey. The information was prepared by digitizing maps, by compiling information 
+onto a planimetric correct base and digitizing, or by revising digitized maps using remotely sensed and other information. This 
+dataset consists of georeferenced digital map data and computerized attribute data. The map data are in a soil survey area 
+extent format and include a detailed, field verified inventory of soils and miscellaneous areas that normally occur in a 
+repeatable pattern on the landscape and that can be cartographically shown at the scale mapped. The soil map units are 
+linked to attributes in the National Soil Information System (NASIS) relational database, which gives the proportionate 
+extent of the component soils and their properties.
+
+During the third week of January 2014, all available SSURGO data were downloaded from Web Soil Survey to a local cache. As 
+part of the download process, the tabular data for each survey were imported into individual SSURGO template databases 
+(MS Access format) using a custom set of 'SSURGO Download Tools' for ArcGIS 10.1. For each state or territory, intersecting 
+SSURGO datasets were identified using the 'laoverlap' table (Legend Area Overlap). The selected datasets were merged and 
+converted from shapefile and MS Access tables into a single ESRI file geodatabase for that state or territory. The data 
+were not clipped to a state boundary, thus in some instances feature classes may extend beyond a state's boundary. All 
+datasets were projected from the original Geographic WGS 1984 coordinate system to the appropriate Albers Equal Area 
+Conic coordinate system. Relationship classes between tables and feature classes were created in the geodatabase.
+
+A 10 meter file geodatabase raster layer was created by converting the 'MUPOLYGON' feature class from feature to raster 
+using 'FeatureToRaster' which is a cell-center-based method in ArcGIS 10.1. Where available, the raster layer was aligned 
+to the USGS NLCD raster. Pyramids and a raster attribute table were created. A single attribute 'MUKEY' was added to the 
+raster attribute table to facilitate joins with the attribute data.
+
+      Process_Date: 201912
+Spatial_Reference_Information:
+  Horizontal_Coordinate_System_Definition:
+    Planar:
+      Map_Projection:
+       Map_Projection_Name: USA_Contiguous_Albers_Equal_Area_Conic_USGS_version
+       Albers_Conical_Equal_Area:
+             Central_Meridian:	-96.00000000
+             Standard_Parallel_1:	29.50000000
+             Standard_Parallel_2:	45.50000000
+             Latitude_Of_Origin:	23.00000000
+      Planar_Coordinate_Information:
+             Planar_Coordinate_Encoding_Method: coordinate(pair)
+             Coordinate_Representation:
+                   Abscissa_Resolution: 5.000000
+                   Ordinate_Resolution: 5.000000
+            Planar_Distance_Units: meters()
+    Geodetic_Model:
+      Horizontal_Datum_Name: GCS_North_American_1983
+      Ellipsoid_Name: Geodetic Reference System 80
+      Semi-major_Axis: 6378137.000000
+      Denominator_of_Flattening_Ratio: 298.257222
+    Geodetic_Model:
+      Horizontal_Datum_Name: North American Datum of 1983 (NAD83)
+      Ellipsoid_Name: GRS1980
+      Semi-major_Axis: 6378137.0
+      Denominator_of_Flattening_Ratio: 298.257222101
+Entity_and_Attribute_Information:
+  Overview_Description:
+    Entity_and_Attribute_Overview:
+      Raster cell locations are based on map unit delineations which 
+    Entity_and_Attribute_Detail_Citation: Relevant attributes are the pixel soil values.
+Distribution_Information:
+  Distribution_Liability:
+
+    Although these data have been processed successfully on a computer system at the U.S. Department of Agriculture, no warranty expressed or implied is made by the Service Center Agencies regarding the utility of the data on any other system, nor shall the act of distribution constitute any such warranty.  The U.S. Department of Agriculture will warrant the delivery of this product in computer readable format, and will offer appropriate adjustment of credit when the product is determined unreadable by correctly adjusted computer input peripherals, or when the physical medium is delivered in damaged condition.  Request for adjustment of credit must be made within 90 days from the date of this shipment from the ordering site.
+
+    Neither the U.S. Department of Agriculture, nor any of its agencies are liable for misuse of the data, for damage, for transmission of viruses, or for computer contamination through the distribution of these data sets.  The U.S. Department of Agriculture prohibits discrimination in all its programs and activities on the basis of race, color, national origin, sex, religion, age, disability, political beliefs, sexual orientation, or marital or family status. (Not all prohibited bases apply to all programs.)
+  Standard_Order_Process:
+    Digital_Form:
+      Digital_Transfer_Information:
+        Format_Name: ESRI File GeoDataBase
+Metadata_Reference_Information:
+  Metadata_Date: 10/26/2021
+  Metadata_Standard_Name: SCI Minimum Compliance Metadata
+  Metadata_Standard_Version: SCI Std 003-02
